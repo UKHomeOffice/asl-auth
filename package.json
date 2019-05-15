@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon -r dotenv/config -e js,jsx,json -w .",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild:css": "mkdir -p ./public/css",
     "build:css": "npm-sass ./assets/app.scss > ./public/css/app.css",
     "postinstall": "npm run build:css"
