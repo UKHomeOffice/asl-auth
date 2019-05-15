@@ -22,6 +22,17 @@ pipeline:
         - push
         - pull_request
 
+  compile:
+    image: node:10
+    secrets:
+      - npm_auth_token
+    commands:
+      - npm run build:css
+    when:
+      event:
+        - push
+        - pull_request
+
   build:
     image: docker:17.09.1
     secrets:
