@@ -5,7 +5,7 @@ const Index = ({ user }) => {
   return <Fragment>
     <h1>{ `${user.profile.firstName} ${user.profile.lastName}` }</h1>
     <h2>Authorization header:</h2>
-    <pre>{ `Bearer ${user.access_token}` }</pre>
+    <textarea>{ `Bearer ${user.access_token}` }</textarea>
   </Fragment>;
 };
 
